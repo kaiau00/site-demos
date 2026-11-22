@@ -1,0 +1,36 @@
+:root {
+  --bg: #241418;
+  --text: #fff0d9;
+  --muted: #dfc4b4;
+  --panel: #382026;
+  --line: #c99a6863;
+  --accent: #edbd7d;
+  --detail: #edbd7d;
+  --glow: #df8d465f;
+  --button-ink: #2c1716;
+  --hero-text: #fff0d9;
+  --dock: #29161bf2;
+  --display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --body: "Work Sans", system-ui, sans-serif;
+  --gutter: clamp(1.25rem, 6vw, 6rem);
+  --radius: .25rem;
+  --crop: 47% 46%;
+  --grade: sepia(.26) contrast(1.1) brightness(.9);
+  --wash: linear-gradient(0deg, #241418 0%, #29131857 66%), radial-gradient(ellipse at 35% 61%, #310e17a8, transparent 76%);
+  --entrance: translateX(-1.15rem);
+  --title-min: 4rem;
+  --title-fluid: 11vw;
+  --title-max: 8.8rem;
+  --pan-x: 2%;
+  --duration: 26s;
+}
+.hero-copy { text-align: center; align-self: center; padding-top: 7rem; padding-bottom: 3.5rem; }
+.hero h1 { text-transform: uppercase; line-height: .83; letter-spacing: -.025em; text-shadow: 0 .1em .35em #190e0e; }
+.hero h1 span:first-child { color: var(--accent); }
+.hero .lede { margin-inline: auto; }
+.hero .actions { justify-content: center; }
+.service { border-width: 1px 0 0; background: transparent; padding-inline: 0; }
+.service:last-child { border-bottom-width: 1px; }
+.rating { background: repeating-linear-gradient(125deg, #41232a, #41232a 1px, #321c22 1px, #321c22 12px); }
+
+.sticky .button { font-size: .8rem; padding-inline: .4rem; }

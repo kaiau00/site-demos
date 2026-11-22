@@ -1,0 +1,36 @@
+:root {
+  --bg: #160e16;
+  --text: #fff3ed;
+  --muted: #d6bdc7;
+  --panel: #261823;
+  --line: #a778855c;
+  --accent: #f3d6ae;
+  --detail: #efbdcd;
+  --glow: #f0a4bb50;
+  --button-ink: #2e1720;
+  --hero-text: #fff7f0;
+  --dock: #1b101be8;
+  --display: "Cormorant Garamond", Georgia, serif;
+  --body: "DM Sans", system-ui, sans-serif;
+  --gutter: clamp(1.25rem, 6vw, 7rem);
+  --radius: .15rem;
+  --crop: 59% 42%;
+  --grade: brightness(.82) saturate(.9) sepia(.12);
+  --wash: linear-gradient(0deg, #160e16 0%, #1a101799 43%, transparent 77%), linear-gradient(90deg, #200f22c9, #61214219 77%);
+  --entrance: translateY(1.5rem) scale(.98);
+  --title-max: 11.5rem;
+  --title-fluid: 17vw;
+  --duration: 34s;
+}
+.hero h1 span + span { font-style: italic; color: var(--detail); margin-left: .28em; }
+.hero-copy { padding-left: clamp(1.25rem, 10vw, 10rem); }
+.hero .eyebrow { border-top: 1px solid #f3d6ae80; padding-top: .85rem; width: fit-content; }
+.section-heading { text-align: center; }
+.service { background: linear-gradient(125deg, #321d2c, var(--panel) 70%); }
+.rating { background: radial-gradient(ellipse at bottom, #452639, var(--bg) 75%); }
+@media (min-width: 48rem) {
+  .services { grid-template-columns: 5fr 4fr; }
+  .detail-photo { grid-column: 1; grid-row: 1; }
+  .service-list { grid-column: 2; }
+  .hero-media img { object-position: 65% 43%; }
+}

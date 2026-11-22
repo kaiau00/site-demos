@@ -1,0 +1,39 @@
+:root {
+  --bg: #f5f0f4;
+  --text: #241a2b;
+  --muted: #59465d;
+  --panel: #fff9ff;
+  --line: #76587955;
+  --accent: #dbc2f5;
+  --detail: #64447c;
+  --glow: #ae7bdf66;
+  --button-ink: #271436;
+  --hero-text: #fff7ff;
+  --dock: #f5edf7ed;
+  --display: "Bricolage Grotesque", system-ui, sans-serif;
+  --body: "Mulish", system-ui, sans-serif;
+  --gutter: clamp(1.125rem, 5vw, 5rem);
+  --radius: 1.25rem;
+  --crop: 62% 50%;
+  --grade: saturate(1.14) brightness(.95);
+  --wash: radial-gradient(ellipse at 95% 7%, #c38bee73, transparent 56%), linear-gradient(0deg, #25182cec 0%, #341c4565 44%, #130b1b38 72%);
+  --entrance: scale(.975) translateY(.65rem);
+  --title-weight: 800;
+  --title-fluid: 13vw;
+  --title-max: 9.5rem;
+  --zoom: 1.18;
+  --pan-x: 1%;
+  --pan-y: -2%;
+  --duration: 39s;
+}
+.hero-copy { justify-self: start; margin: 5.5rem var(--gutter) 2.5rem; padding: clamp(1rem, 4vw, 2rem); border: 1px solid #ffe3ff70; border-radius: 2rem; background: #24152d99; backdrop-filter: blur(12px); }
+.hero h1 span:first-child { color: #eedaff; }
+.button { border-radius: 99rem; }
+.service { background: linear-gradient(115deg, #fffaff, #f1e8fa); }
+.rating { background: linear-gradient(100deg, #ebdef8, #f9e8f1 57%, #d9eee8); }
+@media (min-width: 48rem) {
+  .services { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); }
+  .service-list { grid-template-columns: repeat(2, minmax(0, 1fr)); align-content: stretch; }
+  .service:last-child { grid-column: 1 / -1; }
+}
+:is(.section, footer, .sticky) :focus-visible { outline-color: var(--detail); }

@@ -1,0 +1,42 @@
+:root {
+  --bg: #08262a;
+  --text: #f4fff8;
+  --muted: #c0dcd4;
+  --panel: #10383b;
+  --line: #a5d4c563;
+  --accent: #dcf96f;
+  --detail: #dcf96f;
+  --glow: #c5ff6a55;
+  --button-ink: #162711;
+  --hero-text: #f4fff8;
+  --dock: #092b2eea;
+  --display: "Archivo Black", system-ui, sans-serif;
+  --body: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+  --gutter: clamp(1.125rem, 6vw, 6rem);
+  --radius: .5rem;
+  --crop: 62% 65%;
+  --grade: contrast(1.12) saturate(.88) brightness(.86);
+  --wash: linear-gradient(0deg, #08262a 0%, #08262a70 64%, #0722245e), linear-gradient(125deg, #06272ac9, transparent 71%, #86a9276b);
+  --entrance: translate(-.8rem, .65rem);
+  --title-min: 3rem;
+  --title-fluid: 12vw;
+  --title-max: 9.7rem;
+  --title-weight: 400;
+  --zoom: 1.11;
+  --pan-x: 2%;
+  --pan-y: -1%;
+  --duration: 24s;
+}
+.hero h1 { letter-spacing: -.075em; }
+.hero h1 span:first-child { color: var(--accent); }
+.hero .eyebrow { display: inline-block; padding: .4rem .7rem; background: #092b2dde; border: 1px solid #dcf96f85; }
+.hero-copy { padding-bottom: clamp(4rem, 15vh, 10rem); }
+.service { border-left: 3px solid var(--accent); }
+.rating { background: var(--accent); color: var(--button-ink); }
+.rating :is(.score, .eyebrow, .reviews) { color: inherit; }
+@media (min-width: 48rem) {
+  .services { grid-template-columns: 1fr 2fr; }
+  .rating > div { display: flex; justify-content: center; align-items: center; gap: 2rem; }
+  .rating .score { display: inline-block; margin-right: .6rem; vertical-align: middle; }
+  .rating .reviews { display: inline-block; }
+}
