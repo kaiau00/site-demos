@@ -1,0 +1,40 @@
+:root {
+  --bg: #111d29;
+  --text: #eef7ff;
+  --muted: #b8cede;
+  --panel: #1b2d40;
+  --line: #516e89;
+  --accent: #9ed6ff;
+  --detail: #a6d9ff;
+  --glow: #6ebdff66;
+  --button-ink: #142535;
+  --hero-text: #fff8ef;
+  --dock: #111d29f5;
+  --display: "Bebas Neue", "Arial Narrow", sans-serif;
+  --body: "Source Sans 3", system-ui, sans-serif;
+  --gutter: clamp(1.2rem, 6vw, 6rem);
+  --radius: .35rem;
+  --crop: 54% 55%;
+  --grade: saturate(.8) contrast(1.08) brightness(.78);
+  --wash: linear-gradient(0deg, #111d29 0%, #111d2966 68%), linear-gradient(90deg, #111d2985, #111d2930);
+  --entrance: translateX(1rem);
+  --title-min: 2.85rem;
+  --title-fluid: 11vw;
+  --title-max: 9rem;
+  --title-weight: 400;
+  --pan-x: 2%;
+  --duration: 29s;
+}
+.hero h1 { letter-spacing: .005em; }
+.hero h1 span:last-child { color: var(--accent); }
+.hero .eyebrow { width: fit-content; border-bottom: 1px solid var(--accent); padding-bottom: .5rem; }
+.rating { text-align: left; }
+.rating > div { width: min(100%, 74rem); margin-inline: auto; }
+@media (min-width: 48rem) {
+  .hero-copy { justify-self: end; text-align: right; }
+  .hero .eyebrow, .hero .lede { margin-left: auto; }
+  .hero .actions { justify-content: end; }
+  .detail-photo { grid-area: 1 / 1; }
+}
+
+.sticky .button { padding-inline: .45rem; }

@@ -1,0 +1,35 @@
+:root {
+  --bg: #251814;
+  --text: #fff4e8;
+  --muted: #e4c4b3;
+  --panel: #37231a;
+  --line: #966953;
+  --accent: #ffab7c;
+  --detail: #ffab7c;
+  --glow: #dc78465e;
+  --button-ink: #311b11;
+  --hero-text: #fff8ef;
+  --dock: #251814f5;
+  --display: "Barlow Semi Condensed", "Arial Narrow", sans-serif;
+  --body: "Overpass", system-ui, sans-serif;
+  --gutter: clamp(1.2rem, 6vw, 6rem);
+  --radius: .55rem;
+  --crop: 62% 50%;
+  --grade: saturate(.8) contrast(1.08) brightness(.78);
+  --wash: linear-gradient(0deg, #251814 0%, #25181466 68%), linear-gradient(90deg, #25181485, #25181430);
+  --entrance: translateY(.85rem);
+  --title-min: 3.1rem;
+  --title-fluid: 11vw;
+  --title-max: 8.3rem;
+  --title-weight: 800;
+  --pan-x: -2%;
+  --duration: 23s;
+}
+.hero h1 { line-height: .88; }
+.hero h1 span:nth-child(2) { display: inline-block; color: var(--accent); }
+.hero h1 span:last-child { margin-top: .2em; font-size: .64em; }
+.hero .eyebrow { margin-bottom: .8rem; }
+.service { border-left: 3px solid var(--accent); }
+.rating { background: linear-gradient(100deg, #37231a, #4b2d1e, #37231a); }
+
+.sticky .button { padding-inline: .45rem; }

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#f7ecdb">
+  <meta name="description" content="Demo concept for Cafe 906, cafe &amp; bakery in Orlando, Florida.">
+  <title>Cafe 906 · Orlando</title>
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,700;1,700&amp;family=Work+Sans:wght@400;700&amp;display=swap">
+  <link rel="stylesheet" href="../assets/demo.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="../assets/demo.js" defer></script>
+  <!-- Reference photos. Sources and licenses:
+    Hero — Unsplash License — https://unsplash.com/photos/interior-of-a-cafe-with-tables-and-chairs-XHjf8p3McV0
+    Hero fallback — Unsplash — https://images.unsplash.com/photo-1447933601403-0c6688de566e — https://unsplash.com/license
+    Detail — Jonathan Wilkins / Wikimedia Commons · CC BY-SA 3.0 — https://commons.wikimedia.org/wiki/File:P%C3%A3o_de_Queijo_-_cheese_bread.jpg — https://creativecommons.org/licenses/by-sa/3.0/
+  -->
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="top">
+    <a class="brand" href="#title">Cafe 906</a>
+    <nav aria-label="On this page">
+      <a href="#services">Cafe &amp; bakery</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </header>
+
+  <main id="content" tabindex="-1">
+    <section class="hero" aria-labelledby="title">
+      <div class="hero-media"><img src="https://images.unsplash.com/photo-1770206124597-801bdd953e2a?auto=format&amp;fit=max&amp;w=1800&amp;q=82" width="1200" height="916" fetchpriority="high" alt="Tables and chairs in a cafe by the window. Reference photo." onerror="this.onerror=null; this.alt=&#x27;Roasted coffee beans. Reference photo.&#x27;; this.src=&#x27;../bossa-nova/img/coffee-beans.jpg&#x27;;"></div>
+      <div class="hero-copy">
+        <p class="eyebrow" data-intro>Cafe &amp; bakery · Baldwin Park, Orlando</p>
+        <h1 id="title" aria-label="Cafe 906">
+          <span data-intro style="--step: 1">Cafe</span>
+          <span data-intro style="--step: 2">906</span>
+        </h1>
+        <p class="lede" data-intro style="--step: 3">Find us on New Broad St.</p>
+        <div class="actions" data-intro style="--step: 4">
+          <a class="button primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=4932%20New%20Broad%20St%2C%20Orlando%2C%20FL%2032814" target="_blank" rel="noopener noreferrer">Directions</a>
+          <a class="button secondary" href="https://www.instagram.com/cafe_906/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="services" aria-labelledby="services-title">
+      <h2 class="section-heading" id="services-title" data-reveal>Cafe &amp; bakery</h2>
+      <div class="services">
+        <ul class="service-list">
+          <li class="service" data-reveal style="--delay: 0ms">
+            <h3>Cafe</h3>
+            <p>Coffee and drinks.</p>
+          </li>
+          <li class="service" data-reveal style="--delay: 100ms">
+            <h3>Bakery</h3>
+            <p>Baked goods.</p>
+          </li>
+        </ul>
+        <figure class="detail-photo" data-reveal><img src="../bossa-nova/img/pao-de-queijo.jpg" width="1400" height="934" loading="lazy" decoding="async" alt="Cheese bread and coffee. Reference photo."></figure>
+      </div>
+    </section>
+
+    <section class="rating" aria-labelledby="rating-title">
+      <div data-reveal>
+        <p class="eyebrow" id="rating-title">Google rating</p>
+        <div aria-hidden="true">
+          <p class="score"><span data-count>4.4</span><span> ★</span></p>
+          <p class="reviews"><span data-count>504</span> Google reviews</p>
+        </div>
+        <p class="sr-only">4.4 out of 5 from 504 Google reviews</p>
+      </div>
+    </section>
+
+    <section class="section wrap visit" id="visit" aria-labelledby="visit-title">
+      <div data-reveal>
+        <p class="eyebrow">Baldwin Park · Orlando, Florida</p>
+        <h2 id="visit-title">Visit us</h2>
+        <address>4932 New Broad St, Orlando, FL 32814<br>
+          <a href="tel:+14079605906">(407) 960-5906</a>
+        </address>
+        <a class="button primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=4932%20New%20Broad%20St%2C%20Orlando%2C%20FL%2032814" target="_blank" rel="noopener noreferrer">Directions</a>
+      </div>
+      <iframe class="map" title="Map to Cafe 906" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=4932%20New%20Broad%20St%2C%20Orlando%2C%20FL%2032814&amp;hl=en&amp;z=16&amp;output=embed"></iframe>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p>Demo site concept by Kai Au - not affiliated with Cafe 906.</p>
+    <p>Stock photography. <a href="https://unsplash.com/photos/interior-of-a-cafe-with-tables-and-chairs-XHjf8p3McV0">Hero photo via Unsplash</a> (<a href="https://images.unsplash.com/photo-1447933601403-0c6688de566e">fallback</a> (<a href="https://unsplash.com/license">Unsplash</a>)) and <a href="https://commons.wikimedia.org/wiki/File:P%C3%A3o_de_Queijo_-_cheese_bread.jpg">detail photo</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">Jonathan Wilkins / Wikimedia Commons · CC BY-SA 3.0</a>).</p>
+  </footer>
+
+  <nav class="sticky" aria-label="Contact and directions">
+    <a class="button primary" href="tel:+14079605906">Call</a>
+    <a class="button secondary" href="https://www.google.com/maps/dir/?api=1&amp;destination=4932%20New%20Broad%20St%2C%20Orlando%2C%20FL%2032814" target="_blank" rel="noopener noreferrer">Directions</a>
+  </nav>
+</body>
+</html>

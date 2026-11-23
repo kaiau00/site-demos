@@ -1,0 +1,33 @@
+:root {
+  --bg: #171916;
+  --text: #f6f2e5;
+  --muted: #cecbbc;
+  --panel: #222720;
+  --line: #657358;
+  --accent: #dcf37c;
+  --detail: #536126;
+  --glow: #a4cf555f;
+  --button-ink: #171d0d;
+  --hero-text: #fff8ef;
+  --dock: #171916f5;
+  --display: "Archivo", "Arial Narrow", sans-serif;
+  --body: "DM Sans", system-ui, sans-serif;
+  --gutter: clamp(1.2rem, 6vw, 6rem);
+  --radius: .15rem;
+  --crop: 63% 43%;
+  --grade: saturate(.8) contrast(1.08) brightness(.78);
+  --wash: linear-gradient(0deg, #171916 0%, #17191666 68%), linear-gradient(90deg, #17191685, #17191630);
+  --entrance: translateX(-1rem);
+  --title-min: 2.55rem;
+  --title-fluid: 11vw;
+  --title-max: 7.4rem;
+  --title-weight: 750;
+  --pan-x: -2%;
+  --duration: 25s;
+}
+.hero h1 { text-transform: uppercase; line-height: .95; }
+.hero h1 span:nth-child(2) { color: var(--accent); }
+.hero .lede { border-left: 2px solid var(--accent); padding-left: .85rem; }
+.rating { background: linear-gradient(125deg, #222720, #303c23); }
+
+.sticky .button { padding-inline: .45rem; }

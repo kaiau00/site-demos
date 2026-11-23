@@ -1,0 +1,36 @@
+:root {
+  --bg: #f7ecdb;
+  --text: #43271d;
+  --muted: #674739;
+  --panel: #f0dfc8;
+  --line: #b99a79;
+  --accent: #f5c58a;
+  --detail: #77432b;
+  --glow: #dfa16270;
+  --button-ink: #332016;
+  --hero-text: #fff8ef;
+  --dock: #483027f5;
+  --display: "Bodoni Moda", Georgia, serif;
+  --body: "Work Sans", system-ui, sans-serif;
+  --gutter: clamp(1.2rem, 6vw, 6rem);
+  --radius: 2rem;
+  --crop: 48% 52%;
+  --grade: saturate(.85) brightness(.83);
+  --wash: linear-gradient(0deg, #201318 0%, #20131866 68%), linear-gradient(90deg, #20131885, #20131830);
+  --entrance: translateY(.9rem);
+  --title-min: 4.8rem;
+  --title-fluid: 11vw;
+  --title-max: 10rem;
+  --title-weight: 700;
+  --pan-x: 2%;
+  --duration: 32s;
+}
+.hero-copy { text-align: center; align-self: center; padding-top: 8rem; }
+.hero h1 { line-height: .83; }
+.hero h1 span:last-child { color: var(--accent); font-style: italic; }
+.hero .lede { margin-inline: auto; }
+.hero .actions { justify-content: center; }
+.service { border-width: 1px 0 0; border-radius: 0; background: transparent; }
+.sticky .secondary { background: #f0dfc8; }
+
+.sticky .button { padding-inline: .45rem; }
